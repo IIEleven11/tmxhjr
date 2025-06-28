@@ -1,7 +1,7 @@
-<<<<<<< HEAD
-# tmpafxh
+
+#
 =======
-### Client_JRolo
+### Client_xhjr
 
 # Progress 
 (click the arrows to drop down the information from each attempt)
@@ -91,4 +91,3 @@
 - Fixing the tokenizer now will train another attempt shortly
 - - Perfection is iteration
 </details>
->>>>>>> be763ca (updated)
