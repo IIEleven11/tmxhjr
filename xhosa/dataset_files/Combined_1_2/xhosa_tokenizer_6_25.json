@@ -1,0 +1,4870 @@
+{
+    "version": "1.0",
+    "truncation": null,
+    "padding": null,
+    "added_tokens": [
+        {
+            "id": 0,
+            "content": "[STOP]",
+            "single_word": false,
+            "lstrip": false,
+            "rstrip": false,
+            "normalized": false,
+            "special": true
+        },
+        {
+            "id": 1,
+            "content": "[UNK]",
+            "single_word": false,
+            "lstrip": false,
+            "rstrip": false,
+            "normalized": false,
+            "special": true
+        },
+        {
+            "id": 2,
+            "content": "[SPACE]",
+            "single_word": false,
+            "lstrip": false,
+            "rstrip": false,
+            "normalized": false,
+            "special": true
+        },
+        {
+            "id": 3,
+            "content": "[_c]",
+            "single_word": false,
+            "lstrip": false,
+            "rstrip": false,
+            "normalized": false,
+            "special": true
+        },
+        {
+            "id": 4,
+            "content": "[_x]",
+            "single_word": false,
+            "lstrip": false,
+            "rstrip": false,
+            "normalized": false,
+            "special": true
+        },
+        {
+            "id": 5,
+            "content": "[_q]",
+            "single_word": false,
+            "lstrip": false,
+            "rstrip": false,
+            "normalized": false,
+            "special": true
+        }
+    ],
+    "normalizer": null,
+    "pre_tokenizer": {
+        "type": "Whitespace"
+    },
+    "post_processor": null,
+    "decoder": null,
+    "model": {
+        "type": "BPE",
+        "dropout": null,
+        "unk_token": "[UNK]",
+        "continuing_subword_prefix": null,
+        "end_of_word_suffix": null,
+        "fuse_unk": false,
+        "byte_fallback": false,
+        "ignore_merges": false,
+        "vocab": {
+            "[STOP]": 0,
+            "[UNK]": 1,
+            "[SPACE]": 2,
+            "[_c]": 3,
+            "[_x]": 4,
+            "[_q]": 5,
+            "!": 6,
+            "%": 7,
+            "'": 8,
+            "(": 9,
+            ")": 10,
+            "*": 11,
+            ",": 12,
+            "-": 13,
+            ".": 14,
+            "0": 15,
+            "1": 16,
+            "2": 17,
+            "3": 18,
+            "4": 19,
+            "5": 20,
+            "6": 21,
+            "7": 22,
+            "8": 23,
+            "9": 24,
+            ":": 25,
+            ";": 26,
+            "?": 27,
+            "A": 28,
+            "B": 29,
+            "D": 30,
+            "E": 31,
+            "F": 32,
+            "G": 33,
+            "H": 34,
+            "I": 35,
+            "J": 36,
+            "K": 37,
+            "L": 38,
+            "M": 39,
+            "N": 40,
+            "O": 41,
+            "P": 42,
+            "R": 43,
+            "S": 44,
+            "T": 45,
+            "U": 46,
+            "V": 47,
+            "W": 48,
+            "Y": 49,
+            "Z": 50,
+            "[": 51,
+            "]": 52,
+            "_": 53,
+            "a": 54,
+            "b": 55,
+            "c": 56,
+            "d": 57,
+            "e": 58,
+            "f": 59,
+            "g": 60,
+            "h": 61,
+            "i": 62,
+            "j": 63,
+            "k": 64,
+            "l": 65,
+            "m": 66,
+            "n": 67,
+            "o": 68,
+            "p": 69,
+            "q": 70,
+            "r": 71,
+            "s": 72,
+            "t": 73,
+            "u": 74,
+            "v": 75,
+            "w": 76,
+            "x": 77,
+            "y": 78,
+            "z": 79,
+            "é": 80,
+            "ć": 81,
+            "’": 82,
+            "ng": 83,
+            "ku": 84,
+            "an": 85,
+            "el": 86,
+            "wa": 87,
+            "en": 88,
+            "ba": 89,
+            "zi": 90,
+            "th": 91,
+            "si": 92,
+            "la": 93,
+            "in": 94,
+            "kh": 95,
+            "ma": 96,
+            "ka": 97,
+            "on": 98,
+            "ph": 99,
+            "ya": 100,
+            "le": 101,
+            "nga": 102,
+            "_c": 103,
+            "li": 104,
+            "lo": 105,
+            "we": 106,
+            "yo": 107,
+            "_q": 108,
+            "is": 109,
+            "ko": 110,
+            "lu": 111,
+            "za": 112,
+            "ye": 113,
+            "um": 114,
+            "ke": 115,
+            "_x": 116,
+            "na": 117,
+            "ela": 118,
+            "uku": 119,
+            "di": 120,
+            "ngo": 121,
+            "sh": 122,
+            "se": 123,
+            "da": 124,
+            "yi": 125,
+            "ana": 126,
+            "bu": 127,
+            "be": 128,
+            "kwa": 129,
+            "ele": 130,
+            "thi": 131,
+            "sa": 132,
+            "un": 133,
+            "ban": 134,
+            "eni": 135,
+            "ha": 136,
+            "kw": 137,
+            "nge": 138,
+            "nt": 139,
+            "bo": 140,
+            "oku": 141,
+            "kho": 142,
+            "ezi": 143,
+            "em": 144,
+            "bi": 145,
+            "pha": 146,
+            "ona": 147,
+            "om": 148,
+            "ini": 149,
+            "tsh": 150,
+            "the": 151,
+            "hla": 152,
+            "ze": 153,
+            "tha": 154,
+            "ki": 155,
+            "eli": 156,
+            "and": 157,
+            "zo": 158,
+            "ti": 159,
+            "im": 160,
+            "ulu": 161,
+            "kwe": 162,
+            "int": 163,
+            "wo": 164,
+            "ama": 165,
+            "ne": 166,
+            "ho": 167,
+            "ent": 168,
+            "elo": 169,
+            "isa": 170,
+            "kuba": 171,
+            "kan": 172,
+            "kha": 173,
+            "ndi": 174,
+            "thu": 175,
+            "ukuba": 176,
+            "do": 177,
+            "no": 178,
+            "khe": 179,
+            "fun": 180,
+            "isi": 181,
+            "aba": 182,
+            "je": 183,
+            "ngoku": 184,
+            "ben": 185,
+            "lwa": 186,
+            "wu": 187,
+            "va": 188,
+            "ngu": 189,
+            "de": 190,
+            "so": 191,
+            "elel": 192,
+            "esi": 193,
+            "bant": 194,
+            "fu": 195,
+            "leyo": 196,
+            "ane": 197,
+            "mi": 198,
+            "ty": 199,
+            "phu": 200,
+            "am": 201,
+            "ni": 202,
+            "ise": 203,
+            "bam": 204,
+            "izi": 205,
+            "ngen": 206,
+            "ant": 207,
+            "bon": 208,
+            "nto": 209,
+            "ta": 210,
+            "pho": 211,
+            "ani": 212,
+            "su": 213,
+            "fi": 214,
+            "lw": 215,
+            "phe": 216,
+            "bh": 217,
+            "ra": 218,
+            "kun": 219,
+            "iso": 220,
+            "khulu": 221,
+            "khu": 222,
+            "mo": 223,
+            "nje": 224,
+            "pa": 225,
+            "re": 226,
+            "bha": 227,
+            "kwi": 228,
+            "yen": 229,
+            "kum": 230,
+            "tho": 231,
+            "mba": 232,
+            "vu": 233,
+            "onke": 234,
+            "dla": 235,
+            "andi": 236,
+            "noku": 237,
+            "ntu": 238,
+            "tya": 239,
+            "fa": 240,
+            "te": 241,
+            "wen": 242,
+            "dwa": 243,
+            "wana": 244,
+            "kwen": 245,
+            "jo": 246,
+            "ina": 247,
+            "nd": 248,
+            "to": 249,
+            "ii": 250,
+            "phi": 251,
+            "elwa": 252,
+            "esh": 253,
+            "lela": 254,
+            "hlo": 255,
+            "bona": 256,
+            "ro": 257,
+            "loku": 258,
+            "ve": 259,
+            "seben": 260,
+            "oo": 261,
+            "hl": 262,
+            "anda": 263,
+            "uma": 264,
+            "ga": 265,
+            "kosi": 266,
+            "oni": 267,
+            "bantu": 268,
+            "zu": 269,
+            "ind": 270,
+            "loo": 271,
+            "mbi": 272,
+            "hle": 273,
+            "lwe": 274,
+            "tsho": 275,
+            "ene": 276,
+            "fum": 277,
+            "ri": 278,
+            "antsi": 279,
+            "weni": 280,
+            "kanye": 281,
+            "elela": 282,
+            "mp": 283,
+            "into": 284,
+            "olu": 285,
+            "eku": 286,
+            "ala": 287,
+            "bali": 288,
+            "hoho": 289,
+            "ing": 290,
+            "end": 291,
+            "hu": 292,
+            "iswa": 293,
+            "aku": 294,
+            "mm": 295,
+            "funa": 296,
+            "yoku": 297,
+            "imi": 298,
+            "es": 299,
+            "inga": 300,
+            "elele": 301,
+            "khona": 302,
+            "elwe": 303,
+            "lung": 304,
+            "po": 305,
+            "ngum": 306,
+            "enzi": 307,
+            "gu": 308,
+            "tu": 309,
+            "zwe": 310,
+            "hlu": 311,
+            "uya": 312,
+            "ngesi": 313,
+            "apho": 314,
+            "ja": 315,
+            "man": 316,
+            "nye": 317,
+            "go": 318,
+            "yin": 319,
+            "lisa": 320,
+            "hi": 321,
+            "dawo": 322,
+            "wi": 323,
+            "al": 324,
+            "wan": 325,
+            "esha": 326,
+            "elelelel": 327,
+            "tsha": 328,
+            "fo": 329,
+            "kodwa": 330,
+            "iin": 331,
+            "kile": 332,
+            "sebenzi": 333,
+            "thwa": 334,
+            "yama": 335,
+            "ond": 336,
+            "mali": 337,
+            "inzi": 338,
+            "okanye": 339,
+            "me": 340,
+            "ono": 341,
+            "bana": 342,
+            "aka": 343,
+            "ula": 344,
+            "unga": 345,
+            "ngan": 346,
+            "kwazi": 347,
+            "nom": 348,
+            "kom": 349,
+            "pe": 350,
+            "ubu": 351,
+            "asi": 352,
+            "bini": 353,
+            "thanda": 354,
+            "ngi": 355,
+            "kazi": 356,
+            "nam": 357,
+            "ngama": 358,
+            "kileyo": 359,
+            "nali": 360,
+            "andla": 361,
+            "apha": 362,
+            "band": 363,
+            "uba": 364,
+            "zoku": 365,
+            "ed": 366,
+            "weyo": 367,
+            "pi": 368,
+            "fune": 369,
+            "zin": 370,
+            "uka": 371,
+            "hamba": 372,
+            "us": 373,
+            "sem": 374,
+            "kuku": 375,
+            "wathi": 376,
+            "phaka": 377,
+            "hlala": 378,
+            "waye": 379,
+            "sele": 380,
+            "gama": 381,
+            "ondo": 382,
+            "zulu": 383,
+            "emi": 384,
+            "zela": 385,
+            "phantsi": 386,
+            "yan": 387,
+            "ayi": 388,
+            "swa": 389,
+            "abantu": 390,
+            "ngoko": 391,
+            "lele": 392,
+            "nda": 393,
+            "kala": 394,
+            "ali": 395,
+            "kele": 396,
+            "shi": 397,
+            "mn": 398,
+            "sisi": 399,
+            "ngaba": 400,
+            "ji": 401,
+            "eng": 402,
+            "sen": 403,
+            "bantwana": 404,
+            "fika": 405,
+            "oko": 406,
+            "umntu": 407,
+            "doda": 408,
+            "yayi": 409,
+            "ngom": 410,
+            "ema": 411,
+            "kuma": 412,
+            "phum": 413,
+            "phand": 414,
+            "thetha": 415,
+            "leni": 416,
+            "he": 417,
+            "tye": 418,
+            "uthi": 419,
+            "them": 420,
+            "elu": 421,
+            "hohohoho": 422,
+            "zana": 423,
+            "yu": 424,
+            "obu": 425,
+            "pro": 426,
+            "mbo": 427,
+            "nezi": 428,
+            "yam": 429,
+            "kon": 430,
+            "lin": 431,
+            "wadi": 432,
+            "kanga": 433,
+            "yazi": 434,
+            "enga": 435,
+            "vi": 436,
+            "beni": 437,
+            "kakhulu": 438,
+            "zwa": 439,
+            "nama": 440,
+            "dala": 441,
+            "zen": 442,
+            "yana": 443,
+            "ngela": 444,
+            "hlan": 445,
+            "rh": 446,
+            "iba": 447,
+            "rha": 448,
+            "ubo": 449,
+            "land": 450,
+            "uni": 451,
+            "kali": 452,
+            "fe": 453,
+            "kaloku": 454,
+            "bho": 455,
+            "wano": 456,
+            "du": 457,
+            "jalo": 458,
+            "ngena": 459,
+            "fumana": 460,
+            "kulu": 461,
+            "loko": 462,
+            "fund": 463,
+            "wam": 464,
+            "komo": 465,
+            "st": 466,
+            "bala": 467,
+            "funeka": 468,
+            "lweni": 469,
+            "hlobo": 470,
+            "yom": 471,
+            "phandle": 472,
+            "lom": 473,
+            "fan": 474,
+            "zayo": 475,
+            "ente": 476,
+            "kanti": 477,
+            "bele": 478,
+            "kwaye": 479,
+            "aban": 480,
+            "wayi": 481,
+            "watsho": 482,
+            "ngng": 483,
+            "soku": 484,
+            "vum": 485,
+            "nen": 486,
+            "wazi": 487,
+            "ooo": 488,
+            "waba": 489,
+            "khi": 490,
+            "elelo": 491,
+            "len": 492,
+            "khaya": 493,
+            "eza": 494,
+            "kela": 495,
+            "yis": 496,
+            "pu": 497,
+            "phula": 498,
+            "swe": 499,
+            "mmmm": 500,
+            "iint": 501,
+            "elelelelelelelel": 502,
+            "eko": 503,
+            "bula": 504,
+            "yaku": 505,
+            "fana": 506,
+            "elin": 507,
+            "sety": 508,
+            "eleni": 509,
+            "uye": 510,
+            "kwaku": 511,
+            "inkosi": 512,
+            "thini": 513,
+            "you": 514,
+            "phambi": 515,
+            "lon": 516,
+            "yaka": 517,
+            "ish": 518,
+            "wonke": 519,
+            "kunye": 520,
+            "yakho": 521,
+            "anga": 522,
+            "res": 523,
+            "ngezi": 524,
+            "ib": 525,
+            "yeni": 526,
+            "lan": 527,
+            "phela": 528,
+            "thuba": 529,
+            "nem": 530,
+            "zama": 531,
+            "kwesi": 532,
+            "yakhe": 533,
+            "inda": 534,
+            "zwi": 535,
+            "leka": 536,
+            "ulum": 537,
+            "kwezi": 538,
+            "kwenza": 539,
+            "awu": 540,
+            "ube": 541,
+            "umn": 542,
+            "suku": 543,
+            "wakhe": 544,
+            "masi": 545,
+            "hlaba": 546,
+            "zele": 547,
+            "suka": 548,
+            "hlanje": 549,
+            "kule": 550,
+            "ile": 551,
+            "bani": 552,
+            "lelo": 553,
+            "usi": 554,
+            "bhe": 555,
+            "ngeli": 556,
+            "ham": 557,
+            "jonga": 558,
+            "kukho": 559,
+            "naba": 560,
+            "bhu": 561,
+            "enda": 562,
+            "hayi": 563,
+            "kuyo": 564,
+            "lam": 565,
+            "zam": 566,
+            "zim": 567,
+            "kuthi": 568,
+            "gi": 569,
+            "yela": 570,
+            "woku": 571,
+            "yena": 572,
+            "ezin": 573,
+            "sin": 574,
+            "bile": 575,
+            "alu": 576,
+            "sela": 577,
+            "endi": 578,
+            "ge": 579,
+            "awa": 580,
+            "uza": 581,
+            "azi": 582,
+            "vela": 583,
+            "setyenzi": 584,
+            "ngokuba": 585,
+            "kayo": 586,
+            "ywa": 587,
+            "sha": 588,
+            "iim": 589,
+            "rt": 590,
+            "ngayo": 591,
+            "tsi": 592,
+            "lungu": 593,
+            "vo": 594,
+            "elana": 595,
+            "tshi": 596,
+            "phakathi": 597,
+            "wena": 598,
+            "kaku": 599,
+            "mini": 600,
+            "lawu": 601,
+            "lika": 602,
+            "ntwana": 603,
+            "som": 604,
+            "kwin": 605,
+            "yonke": 606,
+            "yesi": 607,
+            "ento": 608,
+            "kelo": 609,
+            "tion": 610,
+            "bantona": 611,
+            "fundi": 612,
+            "izinto": 613,
+            "yise": 614,
+            "kunga": 615,
+            "oma": 616,
+            "langa": 617,
+            "layo": 618,
+            "babe": 619,
+            "ngokwa": 620,
+            "singa": 621,
+            "emva": 622,
+            "she": 623,
+            "wele": 624,
+            "inise": 625,
+            "enye": 626,
+            "phuma": 627,
+            "ine": 628,
+            "zonke": 629,
+            "yint": 630,
+            "koku": 631,
+            "eda": 632,
+            "lala": 633,
+            "funda": 634,
+            "aman": 635,
+            "naku": 636,
+            "banda": 637,
+            "kwim": 638,
+            "kwan": 639,
+            "mhla": 640,
+            "thum": 641,
+            "hosa": 642,
+            "besi": 643,
+            "benzi": 644,
+            "kwisi": 645,
+            "mntu": 646,
+            "waza": 647,
+            "ukuze": 648,
+            "hli": 649,
+            "zizi": 650,
+            "nase": 651,
+            "zantsi": 652,
+            "beka": 653,
+            "iya": 654,
+            "khawu": 655,
+            "kolo": 656,
+            "lini": 657,
+            "bakho": 658,
+            "ter": 659,
+            "lwan": 660,
+            "ngam": 661,
+            "lunga": 662,
+            "yona": 663,
+            "lula": 664,
+            "eba": 665,
+            "bonke": 666,
+            "mnandi": 667,
+            "ziwa": 668,
+            "hlwa": 669,
+            "bum": 670,
+            "ibali": 671,
+            "entla": 672,
+            "dum": 673,
+            "of": 674,
+            "koko": 675,
+            "sesi": 676,
+            "ver": 677,
+            "usa": 678,
+            "ngwa": 679,
+            "kholo": 680,
+            "ombi": 681,
+            "thetho": 682,
+            "rhulum": 683,
+            "min": 684,
+            "enk": 685,
+            "zini": 686,
+            "bandla": 687,
+            "it": 688,
+            "ulo": 689,
+            "wawa": 690,
+            "ig": 691,
+            "lelwa": 692,
+            "ukun": 693,
+            "ee": 694,
+            "siya": 695,
+            "khan": 696,
+            "fanele": 697,
+            "base": 698,
+            "hohohohohohohoho": 699,
+            "iza": 700,
+            "fumane": 701,
+            "nokuba": 702,
+            "bisa": 703,
+            "ngekho": 704,
+            "lana": 705,
+            "bazi": 706,
+            "thun": 707,
+            "kiso": 708,
+            "khon": 709,
+            "nesi": 710,
+            "kube": 711,
+            "ibe": 712,
+            "olo": 713,
+            "ngaphandle": 714,
+            "that": 715,
+            "phezu": 716,
+            "kakuhle": 717,
+            "mam": 718,
+            "lise": 719,
+            "khum": 720,
+            "ar": 721,
+            "ld": 722,
+            "ngeni": 723,
+            "phezulu": 724,
+            "ok": 725,
+            "sta": 726,
+            "rhulumente": 727,
+            "phepha": 728,
+            "iswe": 729,
+            "bandona": 730,
+            "lakhe": 731,
+            "dolo": 732,
+            "thwe": 733,
+            "elayo": 734,
+            "ag": 735,
+            "oya": 736,
+            "aa": 737,
+            "tywa": 738,
+            "lwini": 739,
+            "lungisa": 740,
+            "kisa": 741,
+            "kwakhona": 742,
+            "ndiya": 743,
+            "jwa": 744,
+            "kufuneka": 745,
+            "ngon": 746,
+            "tsa": 747,
+            "vun": 748,
+            "ebe": 749,
+            "non": 750,
+            "bela": 751,
+            "rd": 752,
+            "ngoba": 753,
+            "ngobu": 754,
+            "nobu": 755,
+            "nalikali": 756,
+            "thela": 757,
+            "kathi": 758,
+            "ukum": 759,
+            "ande": 760,
+            "indi": 761,
+            "phambili": 762,
+            "ukutya": 763,
+            "sebenza": 764,
+            "manzi": 765,
+            "sithi": 766,
+            "ngathi": 767,
+            "maka": 768,
+            "zom": 769,
+            "ral": 770,
+            "wane": 771,
+            "nalo": 772,
+            "khala": 773,
+            "bone": 774,
+            "zeka": 775,
+            "zezi": 776,
+            "zanga": 777,
+            "ale": 778,
+            "kani": 779,
+            "ukwa": 780,
+            "ili": 781,
+            "wakho": 782,
+            "tyi": 783,
+            "van": 784,
+            "yaba": 785,
+            "thile": 786,
+            "shu": 787,
+            "keni": 788,
+            "zon": 789,
+            "leza": 790,
+            "phatha": 791,
+            "esa": 792,
+            "pr": 793,
+            "lel": 794,
+            "vel": 795,
+            "ebu": 796,
+            "eleyo": 797,
+            "fama": 798,
+            "wom": 799,
+            "ntsi": 800,
+            "emo": 801,
+            "namhlanje": 802,
+            "kuye": 803,
+            "ase": 804,
+            "lali": 805,
+            "sana": 806,
+            "uzi": 807,
+            "one": 808,
+            "ileyo": 809,
+            "zinga": 810,
+            "kam": 811,
+            "andand": 812,
+            "banga": 813,
+            "wowo": 814,
+            "njalo": 815,
+            "uli": 816,
+            "ngele": 817,
+            "indlela": 818,
+            "eya": 819,
+            "ekha": 820,
+            "sile": 821,
+            "sho": 822,
+            "daka": 823,
+            "kumbi": 824,
+            "ngngngng": 825,
+            "lama": 826,
+            "biso": 827,
+            "umzi": 828,
+            "bom": 829,
+            "nj": 830,
+            "lwanyana": 831,
+            "kwizi": 832,
+            "ngana": 833,
+            "yango": 834,
+            "buza": 835,
+            "khwe": 836,
+            "ukuyi": 837,
+            "akukho": 838,
+            "aye": 839,
+            "elelwa": 840,
+            "umama": 841,
+            "khatha": 842,
+            "leko": 843,
+            "wang": 844,
+            "iing": 845,
+            "mmmmmmmm": 846,
+            "ven": 847,
+            "phulaphu": 848,
+            "nandi": 849,
+            "yanga": 850,
+            "thatha": 851,
+            "okuba": 852,
+            "lwazi": 853,
+            "yokuba": 854,
+            "hihi": 855,
+            "nanga": 856,
+            "nemi": 857,
+            "unya": 858,
+            "kwii": 859,
+            "elelelelelelelelelelelelelelelel": 860,
+            "kana": 861,
+            "kalo": 862,
+            "eleleyo": 863,
+            "af": 864,
+            "kuya": 865,
+            "bhali": 866,
+            "ur": 867,
+            "lilo": 868,
+            "zazi": 869,
+            "theni": 870,
+            "ngelo": 871,
+            "kwam": 872,
+            "themba": 873,
+            "lesi": 874,
+            "elinye": 875,
+            "uyi": 876,
+            "][": 877,
+            "abe": 878,
+            "ul": 879,
+            "ink": 880,
+            "zaku": 881,
+            "edi": 882,
+            "onga": 883,
+            "ug": 884,
+            "nk": 885,
+            "mama": 886,
+            "thethe": 887,
+            "aki": 888,
+            "igama": 889,
+            "zakho": 890,
+            "restu": 891,
+            "loni": 892,
+            "benga": 893,
+            "tshane": 894,
+            "imini": 895,
+            "enza": 896,
+            "san": 897,
+            "linga": 898,
+            "kwama": 899,
+            "fik": 900,
+            "kula": 901,
+            "ndlu": 902,
+            "dlo": 903,
+            "sasa": 904,
+            "ebo": 905,
+            "hele": 906,
+            "baba": 907,
+            "phinda": 908,
+            "zeni": 909,
+            "kulo": 910,
+            "njenge": 911,
+            "ngesingesi": 912,
+            "zel": 913,
+            "yim": 914,
+            "tor": 915,
+            "yinto": 916,
+            "wabo": 917,
+            "akho": 918,
+            "yon": 919,
+            "ame": 920,
+            "id": 921,
+            "yile": 922,
+            "bane": 923,
+            "dlala": 924,
+            "eneyo": 925,
+            "naye": 926,
+            "er": 927,
+            "sika": 928,
+            "umbi": 929,
+            "kelwa": 930,
+            "wethu": 931,
+            "zakhe": 932,
+            "ule": 933,
+            "kuse": 934,
+            "thina": 935,
+            "sis": 936,
+            "uthe": 937,
+            "wala": 938,
+            "yayo": 939,
+            "for": 940,
+            "beli": 941,
+            "yelwa": 942,
+            "thweni": 943,
+            "kaba": 944,
+            "lobo": 945,
+            "obo": 946,
+            "zem": 947,
+            "isebenzi": 948,
+            "fike": 949,
+            "mbe": 950,
+            "nkosi": 951,
+            "une": 952,
+            "ezinye": 953,
+            "balu": 954,
+            "ont": 955,
+            "alisa": 956,
+            "buzo": 957,
+            "omnye": 958,
+            "nike": 959,
+            "ll": 960,
+            "baza": 961,
+            "ngene": 962,
+            "kelwe": 963,
+            "lwana": 964,
+            "lwimi": 965,
+            "kude": 966,
+            "wesi": 967,
+            "nee": 968,
+            "or": 969,
+            "yenza": 970,
+            "nan": 971,
+            "tshin": 972,
+            "ithi": 973,
+            "zange": 974,
+            "hleli": 975,
+            "yesu": 976,
+            "zesi": 977,
+            "tra": 978,
+            "ukuzi": 979,
+            "tata": 980,
+            "kholwa": 981,
+            "khupha": 982,
+            "ngwe": 983,
+            "kwakhe": 984,
+            "engen": 985,
+            "ziya": 986,
+            "phend": 987,
+            "isana": 988,
+            "sapho": 989,
+            "ome": 990,
+            "ngileyo": 991,
+            "edisa": 992,
+            "zinto": 993,
+            "lind": 994,
+            "tyala": 995,
+            "jonge": 996,
+            "mfo": 997,
+            "kuzo": 998,
+            "vuma": 999,
+            "zathu": 1000,
+            "kisi": 1001,
+            "lum": 1002,
+            "thethi": 1003,
+            "entsi": 1004,
+            "setyenziswa": 1005,
+            "zona": 1006,
+            "ino": 1007,
+            "wama": 1008,
+            "wayo": 1009,
+            "kona": 1010,
+            "kwaba": 1011,
+            "bonakala": 1012,
+            "pali": 1013,
+            "ebi": 1014,
+            "mela": 1015,
+            "utsh": 1016,
+            "inde": 1017,
+            "phondo": 1018,
+            "ingo": 1019,
+            "tr": 1020,
+            "athi": 1021,
+            "baya": 1022,
+            "gwe": 1023
+        },
+        "merges": [
+            [
+                "n",
+                "g"
+            ],
+            [
+                "k",
+                "u"
+            ],
+            [
+                "a",
+                "n"
+            ],
+            [
+                "e",
+                "l"
+            ],
+            [
+                "w",
+                "a"
+            ],
+            [
+                "e",
+                "n"
+            ],
+            [
+                "b",
+                "a"
+            ],
+            [
+                "z",
+                "i"
+            ],
+            [
+                "t",
+                "h"
+            ],
+            [
+                "s",
+                "i"
+            ],
+            [
+                "l",
+                "a"
+            ],
+            [
+                "i",
+                "n"
+            ],
+            [
+                "k",
+                "h"
+            ],
+            [
+                "m",
+                "a"
+            ],
+            [
+                "k",
+                "a"
+            ],
+            [
+                "o",
+                "n"
+            ],
+            [
+                "p",
+                "h"
+            ],
+            [
+                "y",
+                "a"
+            ],
+            [
+                "l",
+                "e"
+            ],
+            [
+                "ng",
+                "a"
+            ],
+            [
+                "_",
+                "c"
+            ],
+            [
+                "l",
+                "i"
+            ],
+            [
+                "l",
+                "o"
+            ],
+            [
+                "w",
+                "e"
+            ],
+            [
+                "y",
+                "o"
+            ],
+            [
+                "_",
+                "q"
+            ],
+            [
+                "i",
+                "s"
+            ],
+            [
+                "k",
+                "o"
+            ],
+            [
+                "l",
+                "u"
+            ],
+            [
+                "z",
+                "a"
+            ],
+            [
+                "y",
+                "e"
+            ],
+            [
+                "u",
+                "m"
+            ],
+            [
+                "k",
+                "e"
+            ],
+            [
+                "_",
+                "x"
+            ],
+            [
+                "n",
+                "a"
+            ],
+            [
+                "el",
+                "a"
+            ],
+            [
+                "u",
+                "ku"
+            ],
+            [
+                "d",
+                "i"
+            ],
+            [
+                "ng",
+                "o"
+            ],
+            [
+                "s",
+                "h"
+            ],
+            [
+                "s",
+                "e"
+            ],
+            [
+                "d",
+                "a"
+            ],
+            [
+                "y",
+                "i"
+            ],
+            [
+                "an",
+                "a"
+            ],
+            [
+                "b",
+                "u"
+            ],
+            [
+                "b",
+                "e"
+            ],
+            [
+                "k",
+                "wa"
+            ],
+            [
+                "el",
+                "e"
+            ],
+            [
+                "th",
+                "i"
+            ],
+            [
+                "s",
+                "a"
+            ],
+            [
+                "u",
+                "n"
+            ],
+            [
+                "b",
+                "an"
+            ],
+            [
+                "en",
+                "i"
+            ],
+            [
+                "h",
+                "a"
+            ],
+            [
+                "k",
+                "w"
+            ],
+            [
+                "ng",
+                "e"
+            ],
+            [
+                "n",
+                "t"
+            ],
+            [
+                "b",
+                "o"
+            ],
+            [
+                "o",
+                "ku"
+            ],
+            [
+                "kh",
+                "o"
+            ],
+            [
+                "e",
+                "zi"
+            ],
+            [
+                "e",
+                "m"
+            ],
+            [
+                "b",
+                "i"
+            ],
+            [
+                "ph",
+                "a"
+            ],
+            [
+                "on",
+                "a"
+            ],
+            [
+                "o",
+                "m"
+            ],
+            [
+                "in",
+                "i"
+            ],
+            [
+                "t",
+                "sh"
+            ],
+            [
+                "th",
+                "e"
+            ],
+            [
+                "h",
+                "la"
+            ],
+            [
+                "z",
+                "e"
+            ],
+            [
+                "th",
+                "a"
+            ],
+            [
+                "k",
+                "i"
+            ],
+            [
+                "el",
+                "i"
+            ],
+            [
+                "an",
+                "d"
+            ],
+            [
+                "z",
+                "o"
+            ],
+            [
+                "t",
+                "i"
+            ],
+            [
+                "i",
+                "m"
+            ],
+            [
+                "u",
+                "lu"
+            ],
+            [
+                "k",
+                "we"
+            ],
+            [
+                "in",
+                "t"
+            ],
+            [
+                "w",
+                "o"
+            ],
+            [
+                "a",
+                "ma"
+            ],
+            [
+                "n",
+                "e"
+            ],
+            [
+                "h",
+                "o"
+            ],
+            [
+                "en",
+                "t"
+            ],
+            [
+                "el",
+                "o"
+            ],
+            [
+                "is",
+                "a"
+            ],
+            [
+                "ku",
+                "ba"
+            ],
+            [
+                "k",
+                "an"
+            ],
+            [
+                "kh",
+                "a"
+            ],
+            [
+                "n",
+                "di"
+            ],
+            [
+                "th",
+                "u"
+            ],
+            [
+                "uku",
+                "ba"
+            ],
+            [
+                "d",
+                "o"
+            ],
+            [
+                "n",
+                "o"
+            ],
+            [
+                "kh",
+                "e"
+            ],
+            [
+                "f",
+                "un"
+            ],
+            [
+                "i",
+                "si"
+            ],
+            [
+                "a",
+                "ba"
+            ],
+            [
+                "j",
+                "e"
+            ],
+            [
+                "ngo",
+                "ku"
+            ],
+            [
+                "b",
+                "en"
+            ],
+            [
+                "l",
+                "wa"
+            ],
+            [
+                "w",
+                "u"
+            ],
+            [
+                "v",
+                "a"
+            ],
+            [
+                "ng",
+                "u"
+            ],
+            [
+                "d",
+                "e"
+            ],
+            [
+                "s",
+                "o"
+            ],
+            [
+                "el",
+                "el"
+            ],
+            [
+                "e",
+                "si"
+            ],
+            [
+                "ban",
+                "t"
+            ],
+            [
+                "f",
+                "u"
+            ],
+            [
+                "le",
+                "yo"
+            ],
+            [
+                "an",
+                "e"
+            ],
+            [
+                "m",
+                "i"
+            ],
+            [
+                "t",
+                "y"
+            ],
+            [
+                "ph",
+                "u"
+            ],
+            [
+                "a",
+                "m"
+            ],
+            [
+                "n",
+                "i"
+            ],
+            [
+                "is",
+                "e"
+            ],
+            [
+                "ba",
+                "m"
+            ],
+            [
+                "i",
+                "zi"
+            ],
+            [
+                "ng",
+                "en"
+            ],
+            [
+                "an",
+                "t"
+            ],
+            [
+                "b",
+                "on"
+            ],
+            [
+                "nt",
+                "o"
+            ],
+            [
+                "t",
+                "a"
+            ],
+            [
+                "ph",
+                "o"
+            ],
+            [
+                "an",
+                "i"
+            ],
+            [
+                "s",
+                "u"
+            ],
+            [
+                "f",
+                "i"
+            ],
+            [
+                "l",
+                "w"
+            ],
+            [
+                "ph",
+                "e"
+            ],
+            [
+                "b",
+                "h"
+            ],
+            [
+                "r",
+                "a"
+            ],
+            [
+                "ku",
+                "n"
+            ],
+            [
+                "is",
+                "o"
+            ],
+            [
+                "kh",
+                "ulu"
+            ],
+            [
+                "kh",
+                "u"
+            ],
+            [
+                "m",
+                "o"
+            ],
+            [
+                "n",
+                "je"
+            ],
+            [
+                "p",
+                "a"
+            ],
+            [
+                "r",
+                "e"
+            ],
+            [
+                "b",
+                "ha"
+            ],
+            [
+                "kw",
+                "i"
+            ],
+            [
+                "y",
+                "en"
+            ],
+            [
+                "ku",
+                "m"
+            ],
+            [
+                "th",
+                "o"
+            ],
+            [
+                "m",
+                "ba"
+            ],
+            [
+                "v",
+                "u"
+            ],
+            [
+                "on",
+                "ke"
+            ],
+            [
+                "d",
+                "la"
+            ],
+            [
+                "an",
+                "di"
+            ],
+            [
+                "n",
+                "oku"
+            ],
+            [
+                "nt",
+                "u"
+            ],
+            [
+                "t",
+                "ya"
+            ],
+            [
+                "f",
+                "a"
+            ],
+            [
+                "t",
+                "e"
+            ],
+            [
+                "w",
+                "en"
+            ],
+            [
+                "d",
+                "wa"
+            ],
+            [
+                "w",
+                "ana"
+            ],
+            [
+                "kw",
+                "en"
+            ],
+            [
+                "j",
+                "o"
+            ],
+            [
+                "in",
+                "a"
+            ],
+            [
+                "n",
+                "d"
+            ],
+            [
+                "t",
+                "o"
+            ],
+            [
+                "i",
+                "i"
+            ],
+            [
+                "ph",
+                "i"
+            ],
+            [
+                "el",
+                "wa"
+            ],
+            [
+                "e",
+                "sh"
+            ],
+            [
+                "l",
+                "ela"
+            ],
+            [
+                "h",
+                "lo"
+            ],
+            [
+                "b",
+                "ona"
+            ],
+            [
+                "r",
+                "o"
+            ],
+            [
+                "lo",
+                "ku"
+            ],
+            [
+                "v",
+                "e"
+            ],
+            [
+                "se",
+                "ben"
+            ],
+            [
+                "o",
+                "o"
+            ],
+            [
+                "h",
+                "l"
+            ],
+            [
+                "an",
+                "da"
+            ],
+            [
+                "u",
+                "ma"
+            ],
+            [
+                "g",
+                "a"
+            ],
+            [
+                "ko",
+                "si"
+            ],
+            [
+                "on",
+                "i"
+            ],
+            [
+                "bant",
+                "u"
+            ],
+            [
+                "z",
+                "u"
+            ],
+            [
+                "in",
+                "d"
+            ],
+            [
+                "lo",
+                "o"
+            ],
+            [
+                "m",
+                "bi"
+            ],
+            [
+                "h",
+                "le"
+            ],
+            [
+                "l",
+                "we"
+            ],
+            [
+                "tsh",
+                "o"
+            ],
+            [
+                "en",
+                "e"
+            ],
+            [
+                "f",
+                "um"
+            ],
+            [
+                "r",
+                "i"
+            ],
+            [
+                "ant",
+                "si"
+            ],
+            [
+                "w",
+                "eni"
+            ],
+            [
+                "kan",
+                "ye"
+            ],
+            [
+                "el",
+                "ela"
+            ],
+            [
+                "m",
+                "p"
+            ],
+            [
+                "int",
+                "o"
+            ],
+            [
+                "o",
+                "lu"
+            ],
+            [
+                "e",
+                "ku"
+            ],
+            [
+                "a",
+                "la"
+            ],
+            [
+                "ba",
+                "li"
+            ],
+            [
+                "ho",
+                "ho"
+            ],
+            [
+                "i",
+                "ng"
+            ],
+            [
+                "en",
+                "d"
+            ],
+            [
+                "h",
+                "u"
+            ],
+            [
+                "is",
+                "wa"
+            ],
+            [
+                "a",
+                "ku"
+            ],
+            [
+                "m",
+                "m"
+            ],
+            [
+                "fu",
+                "na"
+            ],
+            [
+                "yo",
+                "ku"
+            ],
+            [
+                "im",
+                "i"
+            ],
+            [
+                "e",
+                "s"
+            ],
+            [
+                "i",
+                "nga"
+            ],
+            [
+                "el",
+                "ele"
+            ],
+            [
+                "kh",
+                "ona"
+            ],
+            [
+                "el",
+                "we"
+            ],
+            [
+                "lu",
+                "ng"
+            ],
+            [
+                "p",
+                "o"
+            ],
+            [
+                "ng",
+                "um"
+            ],
+            [
+                "en",
+                "zi"
+            ],
+            [
+                "g",
+                "u"
+            ],
+            [
+                "t",
+                "u"
+            ],
+            [
+                "z",
+                "we"
+            ],
+            [
+                "h",
+                "lu"
+            ],
+            [
+                "u",
+                "ya"
+            ],
+            [
+                "nge",
+                "si"
+            ],
+            [
+                "a",
+                "pho"
+            ],
+            [
+                "j",
+                "a"
+            ],
+            [
+                "m",
+                "an"
+            ],
+            [
+                "n",
+                "ye"
+            ],
+            [
+                "g",
+                "o"
+            ],
+            [
+                "y",
+                "in"
+            ],
+            [
+                "li",
+                "sa"
+            ],
+            [
+                "h",
+                "i"
+            ],
+            [
+                "da",
+                "wo"
+            ],
+            [
+                "w",
+                "i"
+            ],
+            [
+                "a",
+                "l"
+            ],
+            [
+                "w",
+                "an"
+            ],
+            [
+                "esh",
+                "a"
+            ],
+            [
+                "elel",
+                "elel"
+            ],
+            [
+                "tsh",
+                "a"
+            ],
+            [
+                "f",
+                "o"
+            ],
+            [
+                "ko",
+                "dwa"
+            ],
+            [
+                "i",
+                "in"
+            ],
+            [
+                "ki",
+                "le"
+            ],
+            [
+                "seben",
+                "zi"
+            ],
+            [
+                "th",
+                "wa"
+            ],
+            [
+                "ya",
+                "ma"
+            ],
+            [
+                "on",
+                "d"
+            ],
+            [
+                "ma",
+                "li"
+            ],
+            [
+                "in",
+                "zi"
+            ],
+            [
+                "o",
+                "kanye"
+            ],
+            [
+                "m",
+                "e"
+            ],
+            [
+                "on",
+                "o"
+            ],
+            [
+                "b",
+                "ana"
+            ],
+            [
+                "a",
+                "ka"
+            ],
+            [
+                "u",
+                "la"
+            ],
+            [
+                "u",
+                "nga"
+            ],
+            [
+                "ng",
+                "an"
+            ],
+            [
+                "kwa",
+                "zi"
+            ],
+            [
+                "n",
+                "om"
+            ],
+            [
+                "ko",
+                "m"
+            ],
+            [
+                "p",
+                "e"
+            ],
+            [
+                "u",
+                "bu"
+            ],
+            [
+                "a",
+                "si"
+            ],
+            [
+                "b",
+                "ini"
+            ],
+            [
+                "th",
+                "anda"
+            ],
+            [
+                "ng",
+                "i"
+            ],
+            [
+                "ka",
+                "zi"
+            ],
+            [
+                "na",
+                "m"
+            ],
+            [
+                "nga",
+                "ma"
+            ],
+            [
+                "ki",
+                "leyo"
+            ],
+            [
+                "na",
+                "li"
+            ],
+            [
+                "and",
+                "la"
+            ],
+            [
+                "a",
+                "pha"
+            ],
+            [
+                "ban",
+                "d"
+            ],
+            [
+                "u",
+                "ba"
+            ],
+            [
+                "z",
+                "oku"
+            ],
+            [
+                "e",
+                "d"
+            ],
+            [
+                "we",
+                "yo"
+            ],
+            [
+                "p",
+                "i"
+            ],
+            [
+                "fun",
+                "e"
+            ],
+            [
+                "zi",
+                "n"
+            ],
+            [
+                "u",
+                "ka"
+            ],
+            [
+                "ha",
+                "mba"
+            ],
+            [
+                "u",
+                "s"
+            ],
+            [
+                "se",
+                "m"
+            ],
+            [
+                "ku",
+                "ku"
+            ],
+            [
+                "wa",
+                "thi"
+            ],
+            [
+                "pha",
+                "ka"
+            ],
+            [
+                "hla",
+                "la"
+            ],
+            [
+                "wa",
+                "ye"
+            ],
+            [
+                "s",
+                "ele"
+            ],
+            [
+                "g",
+                "ama"
+            ],
+            [
+                "on",
+                "do"
+            ],
+            [
+                "z",
+                "ulu"
+            ],
+            [
+                "em",
+                "i"
+            ],
+            [
+                "z",
+                "ela"
+            ],
+            [
+                "ph",
+                "antsi"
+            ],
+            [
+                "y",
+                "an"
+            ],
+            [
+                "a",
+                "yi"
+            ],
+            [
+                "s",
+                "wa"
+            ],
+            [
+                "a",
+                "bantu"
+            ],
+            [
+                "ngo",
+                "ko"
+            ],
+            [
+                "l",
+                "ele"
+            ],
+            [
+                "n",
+                "da"
+            ],
+            [
+                "ka",
+                "la"
+            ],
+            [
+                "a",
+                "li"
+            ],
+            [
+                "k",
+                "ele"
+            ],
+            [
+                "sh",
+                "i"
+            ],
+            [
+                "m",
+                "n"
+            ],
+            [
+                "si",
+                "si"
+            ],
+            [
+                "nga",
+                "ba"
+            ],
+            [
+                "j",
+                "i"
+            ],
+            [
+                "e",
+                "ng"
+            ],
+            [
+                "s",
+                "en"
+            ],
+            [
+                "bant",
+                "wana"
+            ],
+            [
+                "fi",
+                "ka"
+            ],
+            [
+                "o",
+                "ko"
+            ],
+            [
+                "um",
+                "ntu"
+            ],
+            [
+                "do",
+                "da"
+            ],
+            [
+                "ya",
+                "yi"
+            ],
+            [
+                "ngo",
+                "m"
+            ],
+            [
+                "e",
+                "ma"
+            ],
+            [
+                "ku",
+                "ma"
+            ],
+            [
+                "ph",
+                "um"
+            ],
+            [
+                "ph",
+                "and"
+            ],
+            [
+                "the",
+                "tha"
+            ],
+            [
+                "l",
+                "eni"
+            ],
+            [
+                "h",
+                "e"
+            ],
+            [
+                "t",
+                "ye"
+            ],
+            [
+                "u",
+                "thi"
+            ],
+            [
+                "th",
+                "em"
+            ],
+            [
+                "el",
+                "u"
+            ],
+            [
+                "hoho",
+                "hoho"
+            ],
+            [
+                "z",
+                "ana"
+            ],
+            [
+                "y",
+                "u"
+            ],
+            [
+                "o",
+                "bu"
+            ],
+            [
+                "p",
+                "ro"
+            ],
+            [
+                "m",
+                "bo"
+            ],
+            [
+                "n",
+                "ezi"
+            ],
+            [
+                "ya",
+                "m"
+            ],
+            [
+                "k",
+                "on"
+            ],
+            [
+                "l",
+                "in"
+            ],
+            [
+                "wa",
+                "di"
+            ],
+            [
+                "ka",
+                "nga"
+            ],
+            [
+                "ya",
+                "zi"
+            ],
+            [
+                "e",
+                "nga"
+            ],
+            [
+                "v",
+                "i"
+            ],
+            [
+                "b",
+                "eni"
+            ],
+            [
+                "ka",
+                "khulu"
+            ],
+            [
+                "z",
+                "wa"
+            ],
+            [
+                "na",
+                "ma"
+            ],
+            [
+                "da",
+                "la"
+            ],
+            [
+                "z",
+                "en"
+            ],
+            [
+                "y",
+                "ana"
+            ],
+            [
+                "ng",
+                "ela"
+            ],
+            [
+                "hl",
+                "an"
+            ],
+            [
+                "r",
+                "h"
+            ],
+            [
+                "i",
+                "ba"
+            ],
+            [
+                "r",
+                "ha"
+            ],
+            [
+                "u",
+                "bo"
+            ],
+            [
+                "l",
+                "and"
+            ],
+            [
+                "un",
+                "i"
+            ],
+            [
+                "ka",
+                "li"
+            ],
+            [
+                "f",
+                "e"
+            ],
+            [
+                "ka",
+                "loku"
+            ],
+            [
+                "b",
+                "ho"
+            ],
+            [
+                "wan",
+                "o"
+            ],
+            [
+                "d",
+                "u"
+            ],
+            [
+                "ja",
+                "lo"
+            ],
+            [
+                "ngen",
+                "a"
+            ],
+            [
+                "fum",
+                "ana"
+            ],
+            [
+                "ku",
+                "lu"
+            ],
+            [
+                "lo",
+                "ko"
+            ],
+            [
+                "fun",
+                "d"
+            ],
+            [
+                "wa",
+                "m"
+            ],
+            [
+                "ko",
+                "mo"
+            ],
+            [
+                "s",
+                "t"
+            ],
+            [
+                "ba",
+                "la"
+            ],
+            [
+                "fune",
+                "ka"
+            ],
+            [
+                "lw",
+                "eni"
+            ],
+            [
+                "hlo",
+                "bo"
+            ],
+            [
+                "yo",
+                "m"
+            ],
+            [
+                "phand",
+                "le"
+            ],
+            [
+                "lo",
+                "m"
+            ],
+            [
+                "f",
+                "an"
+            ],
+            [
+                "za",
+                "yo"
+            ],
+            [
+                "ent",
+                "e"
+            ],
+            [
+                "kan",
+                "ti"
+            ],
+            [
+                "b",
+                "ele"
+            ],
+            [
+                "kwa",
+                "ye"
+            ],
+            [
+                "a",
+                "ban"
+            ],
+            [
+                "wa",
+                "yi"
+            ],
+            [
+                "wa",
+                "tsho"
+            ],
+            [
+                "ng",
+                "ng"
+            ],
+            [
+                "s",
+                "oku"
+            ],
+            [
+                "v",
+                "um"
+            ],
+            [
+                "n",
+                "en"
+            ],
+            [
+                "wa",
+                "zi"
+            ],
+            [
+                "oo",
+                "o"
+            ],
+            [
+                "wa",
+                "ba"
+            ],
+            [
+                "kh",
+                "i"
+            ],
+            [
+                "el",
+                "elo"
+            ],
+            [
+                "l",
+                "en"
+            ],
+            [
+                "kha",
+                "ya"
+            ],
+            [
+                "e",
+                "za"
+            ],
+            [
+                "k",
+                "ela"
+            ],
+            [
+                "y",
+                "is"
+            ],
+            [
+                "p",
+                "u"
+            ],
+            [
+                "phu",
+                "la"
+            ],
+            [
+                "s",
+                "we"
+            ],
+            [
+                "mm",
+                "mm"
+            ],
+            [
+                "i",
+                "int"
+            ],
+            [
+                "elelelel",
+                "elelelel"
+            ],
+            [
+                "e",
+                "ko"
+            ],
+            [
+                "bu",
+                "la"
+            ],
+            [
+                "ya",
+                "ku"
+            ],
+            [
+                "f",
+                "ana"
+            ],
+            [
+                "el",
+                "in"
+            ],
+            [
+                "se",
+                "ty"
+            ],
+            [
+                "el",
+                "eni"
+            ],
+            [
+                "u",
+                "ye"
+            ],
+            [
+                "kwa",
+                "ku"
+            ],
+            [
+                "in",
+                "kosi"
+            ],
+            [
+                "th",
+                "ini"
+            ],
+            [
+                "yo",
+                "u"
+            ],
+            [
+                "pha",
+                "mbi"
+            ],
+            [
+                "l",
+                "on"
+            ],
+            [
+                "ya",
+                "ka"
+            ],
+            [
+                "is",
+                "h"
+            ],
+            [
+                "w",
+                "onke"
+            ],
+            [
+                "kun",
+                "ye"
+            ],
+            [
+                "ya",
+                "kho"
+            ],
+            [
+                "a",
+                "nga"
+            ],
+            [
+                "re",
+                "s"
+            ],
+            [
+                "nge",
+                "zi"
+            ],
+            [
+                "i",
+                "b"
+            ],
+            [
+                "y",
+                "eni"
+            ],
+            [
+                "l",
+                "an"
+            ],
+            [
+                "ph",
+                "ela"
+            ],
+            [
+                "thu",
+                "ba"
+            ],
+            [
+                "n",
+                "em"
+            ],
+            [
+                "za",
+                "ma"
+            ],
+            [
+                "kwe",
+                "si"
+            ],
+            [
+                "ya",
+                "khe"
+            ],
+            [
+                "in",
+                "da"
+            ],
+            [
+                "z",
+                "wi"
+            ],
+            [
+                "le",
+                "ka"
+            ],
+            [
+                "ulu",
+                "m"
+            ],
+            [
+                "kwe",
+                "zi"
+            ],
+            [
+                "kwen",
+                "za"
+            ],
+            [
+                "a",
+                "wu"
+            ],
+            [
+                "u",
+                "be"
+            ],
+            [
+                "um",
+                "n"
+            ],
+            [
+                "s",
+                "uku"
+            ],
+            [
+                "wa",
+                "khe"
+            ],
+            [
+                "ma",
+                "si"
+            ],
+            [
+                "hla",
+                "ba"
+            ],
+            [
+                "z",
+                "ele"
+            ],
+            [
+                "su",
+                "ka"
+            ],
+            [
+                "hlan",
+                "je"
+            ],
+            [
+                "ku",
+                "le"
+            ],
+            [
+                "i",
+                "le"
+            ],
+            [
+                "ban",
+                "i"
+            ],
+            [
+                "l",
+                "elo"
+            ],
+            [
+                "u",
+                "si"
+            ],
+            [
+                "bh",
+                "e"
+            ],
+            [
+                "ng",
+                "eli"
+            ],
+            [
+                "ha",
+                "m"
+            ],
+            [
+                "jo",
+                "nga"
+            ],
+            [
+                "ku",
+                "kho"
+            ],
+            [
+                "na",
+                "ba"
+            ],
+            [
+                "bh",
+                "u"
+            ],
+            [
+                "en",
+                "da"
+            ],
+            [
+                "ha",
+                "yi"
+            ],
+            [
+                "ku",
+                "yo"
+            ],
+            [
+                "la",
+                "m"
+            ],
+            [
+                "za",
+                "m"
+            ],
+            [
+                "zi",
+                "m"
+            ],
+            [
+                "ku",
+                "thi"
+            ],
+            [
+                "g",
+                "i"
+            ],
+            [
+                "y",
+                "ela"
+            ],
+            [
+                "w",
+                "oku"
+            ],
+            [
+                "yen",
+                "a"
+            ],
+            [
+                "ezi",
+                "n"
+            ],
+            [
+                "si",
+                "n"
+            ],
+            [
+                "bi",
+                "le"
+            ],
+            [
+                "a",
+                "lu"
+            ],
+            [
+                "s",
+                "ela"
+            ],
+            [
+                "en",
+                "di"
+            ],
+            [
+                "g",
+                "e"
+            ],
+            [
+                "a",
+                "wa"
+            ],
+            [
+                "u",
+                "za"
+            ],
+            [
+                "a",
+                "zi"
+            ],
+            [
+                "v",
+                "ela"
+            ],
+            [
+                "sety",
+                "enzi"
+            ],
+            [
+                "ngo",
+                "kuba"
+            ],
+            [
+                "ka",
+                "yo"
+            ],
+            [
+                "y",
+                "wa"
+            ],
+            [
+                "sh",
+                "a"
+            ],
+            [
+                "i",
+                "im"
+            ],
+            [
+                "r",
+                "t"
+            ],
+            [
+                "nga",
+                "yo"
+            ],
+            [
+                "t",
+                "si"
+            ],
+            [
+                "lu",
+                "ngu"
+            ],
+            [
+                "v",
+                "o"
+            ],
+            [
+                "el",
+                "ana"
+            ],
+            [
+                "tsh",
+                "i"
+            ],
+            [
+                "phaka",
+                "thi"
+            ],
+            [
+                "wen",
+                "a"
+            ],
+            [
+                "ka",
+                "ku"
+            ],
+            [
+                "m",
+                "ini"
+            ],
+            [
+                "la",
+                "wu"
+            ],
+            [
+                "li",
+                "ka"
+            ],
+            [
+                "nt",
+                "wana"
+            ],
+            [
+                "s",
+                "om"
+            ],
+            [
+                "kw",
+                "in"
+            ],
+            [
+                "y",
+                "onke"
+            ],
+            [
+                "ye",
+                "si"
+            ],
+            [
+                "ent",
+                "o"
+            ],
+            [
+                "k",
+                "elo"
+            ],
+            [
+                "ti",
+                "on"
+            ],
+            [
+                "bant",
+                "ona"
+            ],
+            [
+                "fun",
+                "di"
+            ],
+            [
+                "izi",
+                "nto"
+            ],
+            [
+                "y",
+                "ise"
+            ],
+            [
+                "ku",
+                "nga"
+            ],
+            [
+                "o",
+                "ma"
+            ],
+            [
+                "la",
+                "nga"
+            ],
+            [
+                "la",
+                "yo"
+            ],
+            [
+                "ba",
+                "be"
+            ],
+            [
+                "ngo",
+                "kwa"
+            ],
+            [
+                "si",
+                "nga"
+            ],
+            [
+                "em",
+                "va"
+            ],
+            [
+                "sh",
+                "e"
+            ],
+            [
+                "w",
+                "ele"
+            ],
+            [
+                "in",
+                "ise"
+            ],
+            [
+                "en",
+                "ye"
+            ],
+            [
+                "phu",
+                "ma"
+            ],
+            [
+                "in",
+                "e"
+            ],
+            [
+                "z",
+                "onke"
+            ],
+            [
+                "y",
+                "int"
+            ],
+            [
+                "ko",
+                "ku"
+            ],
+            [
+                "e",
+                "da"
+            ],
+            [
+                "la",
+                "la"
+            ],
+            [
+                "fun",
+                "da"
+            ],
+            [
+                "am",
+                "an"
+            ],
+            [
+                "na",
+                "ku"
+            ],
+            [
+                "ban",
+                "da"
+            ],
+            [
+                "kw",
+                "im"
+            ],
+            [
+                "kw",
+                "an"
+            ],
+            [
+                "m",
+                "hla"
+            ],
+            [
+                "th",
+                "um"
+            ],
+            [
+                "ho",
+                "sa"
+            ],
+            [
+                "be",
+                "si"
+            ],
+            [
+                "ben",
+                "zi"
+            ],
+            [
+                "kw",
+                "isi"
+            ],
+            [
+                "m",
+                "ntu"
+            ],
+            [
+                "wa",
+                "za"
+            ],
+            [
+                "uku",
+                "ze"
+            ],
+            [
+                "h",
+                "li"
+            ],
+            [
+                "zi",
+                "zi"
+            ],
+            [
+                "na",
+                "se"
+            ],
+            [
+                "z",
+                "antsi"
+            ],
+            [
+                "be",
+                "ka"
+            ],
+            [
+                "i",
+                "ya"
+            ],
+            [
+                "kha",
+                "wu"
+            ],
+            [
+                "ko",
+                "lo"
+            ],
+            [
+                "l",
+                "ini"
+            ],
+            [
+                "ba",
+                "kho"
+            ],
+            [
+                "te",
+                "r"
+            ],
+            [
+                "lw",
+                "an"
+            ],
+            [
+                "nga",
+                "m"
+            ],
+            [
+                "lu",
+                "nga"
+            ],
+            [
+                "y",
+                "ona"
+            ],
+            [
+                "lu",
+                "la"
+            ],
+            [
+                "e",
+                "ba"
+            ],
+            [
+                "bon",
+                "ke"
+            ],
+            [
+                "mn",
+                "andi"
+            ],
+            [
+                "zi",
+                "wa"
+            ],
+            [
+                "h",
+                "lwa"
+            ],
+            [
+                "b",
+                "um"
+            ],
+            [
+                "i",
+                "bali"
+            ],
+            [
+                "ent",
+                "la"
+            ],
+            [
+                "d",
+                "um"
+            ],
+            [
+                "o",
+                "f"
+            ],
+            [
+                "ko",
+                "ko"
+            ],
+            [
+                "se",
+                "si"
+            ],
+            [
+                "ve",
+                "r"
+            ],
+            [
+                "u",
+                "sa"
+            ],
+            [
+                "ng",
+                "wa"
+            ],
+            [
+                "kho",
+                "lo"
+            ],
+            [
+                "om",
+                "bi"
+            ],
+            [
+                "the",
+                "tho"
+            ],
+            [
+                "rh",
+                "ulum"
+            ],
+            [
+                "m",
+                "in"
+            ],
+            [
+                "en",
+                "k"
+            ],
+            [
+                "zi",
+                "ni"
+            ],
+            [
+                "ban",
+                "dla"
+            ],
+            [
+                "i",
+                "t"
+            ],
+            [
+                "u",
+                "lo"
+            ],
+            [
+                "wa",
+                "wa"
+            ],
+            [
+                "i",
+                "g"
+            ],
+            [
+                "l",
+                "elwa"
+            ],
+            [
+                "uku",
+                "n"
+            ],
+            [
+                "e",
+                "e"
+            ],
+            [
+                "si",
+                "ya"
+            ],
+            [
+                "kh",
+                "an"
+            ],
+            [
+                "fan",
+                "ele"
+            ],
+            [
+                "ba",
+                "se"
+            ],
+            [
+                "hohohoho",
+                "hohohoho"
+            ],
+            [
+                "i",
+                "za"
+            ],
+            [
+                "fum",
+                "ane"
+            ],
+            [
+                "noku",
+                "ba"
+            ],
+            [
+                "b",
+                "isa"
+            ],
+            [
+                "nge",
+                "kho"
+            ],
+            [
+                "l",
+                "ana"
+            ],
+            [
+                "ba",
+                "zi"
+            ],
+            [
+                "th",
+                "un"
+            ],
+            [
+                "k",
+                "iso"
+            ],
+            [
+                "kh",
+                "on"
+            ],
+            [
+                "ne",
+                "si"
+            ],
+            [
+                "ku",
+                "be"
+            ],
+            [
+                "i",
+                "be"
+            ],
+            [
+                "o",
+                "lo"
+            ],
+            [
+                "nga",
+                "phandle"
+            ],
+            [
+                "tha",
+                "t"
+            ],
+            [
+                "phe",
+                "zu"
+            ],
+            [
+                "kaku",
+                "hle"
+            ],
+            [
+                "ma",
+                "m"
+            ],
+            [
+                "li",
+                "se"
+            ],
+            [
+                "kh",
+                "um"
+            ],
+            [
+                "a",
+                "r"
+            ],
+            [
+                "l",
+                "d"
+            ],
+            [
+                "ng",
+                "eni"
+            ],
+            [
+                "phe",
+                "zulu"
+            ],
+            [
+                "o",
+                "k"
+            ],
+            [
+                "s",
+                "ta"
+            ],
+            [
+                "rhulum",
+                "ente"
+            ],
+            [
+                "phe",
+                "pha"
+            ],
+            [
+                "is",
+                "we"
+            ],
+            [
+                "band",
+                "ona"
+            ],
+            [
+                "la",
+                "khe"
+            ],
+            [
+                "do",
+                "lo"
+            ],
+            [
+                "th",
+                "we"
+            ],
+            [
+                "ela",
+                "yo"
+            ],
+            [
+                "a",
+                "g"
+            ],
+            [
+                "o",
+                "ya"
+            ],
+            [
+                "a",
+                "a"
+            ],
+            [
+                "ty",
+                "wa"
+            ],
+            [
+                "lw",
+                "ini"
+            ],
+            [
+                "lung",
+                "isa"
+            ],
+            [
+                "k",
+                "isa"
+            ],
+            [
+                "kwa",
+                "khona"
+            ],
+            [
+                "ndi",
+                "ya"
+            ],
+            [
+                "j",
+                "wa"
+            ],
+            [
+                "ku",
+                "funeka"
+            ],
+            [
+                "ng",
+                "on"
+            ],
+            [
+                "t",
+                "sa"
+            ],
+            [
+                "v",
+                "un"
+            ],
+            [
+                "e",
+                "be"
+            ],
+            [
+                "n",
+                "on"
+            ],
+            [
+                "b",
+                "ela"
+            ],
+            [
+                "r",
+                "d"
+            ],
+            [
+                "ngo",
+                "ba"
+            ],
+            [
+                "ngo",
+                "bu"
+            ],
+            [
+                "no",
+                "bu"
+            ],
+            [
+                "nali",
+                "kali"
+            ],
+            [
+                "th",
+                "ela"
+            ],
+            [
+                "ka",
+                "thi"
+            ],
+            [
+                "uku",
+                "m"
+            ],
+            [
+                "and",
+                "e"
+            ],
+            [
+                "in",
+                "di"
+            ],
+            [
+                "phambi",
+                "li"
+            ],
+            [
+                "uku",
+                "tya"
+            ],
+            [
+                "seben",
+                "za"
+            ],
+            [
+                "man",
+                "zi"
+            ],
+            [
+                "si",
+                "thi"
+            ],
+            [
+                "nga",
+                "thi"
+            ],
+            [
+                "ma",
+                "ka"
+            ],
+            [
+                "z",
+                "om"
+            ],
+            [
+                "ra",
+                "l"
+            ],
+            [
+                "w",
+                "ane"
+            ],
+            [
+                "na",
+                "lo"
+            ],
+            [
+                "kha",
+                "la"
+            ],
+            [
+                "bon",
+                "e"
+            ],
+            [
+                "ze",
+                "ka"
+            ],
+            [
+                "z",
+                "ezi"
+            ],
+            [
+                "za",
+                "nga"
+            ],
+            [
+                "a",
+                "le"
+            ],
+            [
+                "kan",
+                "i"
+            ],
+            [
+                "u",
+                "kwa"
+            ],
+            [
+                "i",
+                "li"
+            ],
+            [
+                "wa",
+                "kho"
+            ],
+            [
+                "t",
+                "yi"
+            ],
+            [
+                "v",
+                "an"
+            ],
+            [
+                "ya",
+                "ba"
+            ],
+            [
+                "thi",
+                "le"
+            ],
+            [
+                "sh",
+                "u"
+            ],
+            [
+                "k",
+                "eni"
+            ],
+            [
+                "z",
+                "on"
+            ],
+            [
+                "le",
+                "za"
+            ],
+            [
+                "pha",
+                "tha"
+            ],
+            [
+                "e",
+                "sa"
+            ],
+            [
+                "p",
+                "r"
+            ],
+            [
+                "l",
+                "el"
+            ],
+            [
+                "v",
+                "el"
+            ],
+            [
+                "e",
+                "bu"
+            ],
+            [
+                "ele",
+                "yo"
+            ],
+            [
+                "f",
+                "ama"
+            ],
+            [
+                "w",
+                "om"
+            ],
+            [
+                "nt",
+                "si"
+            ],
+            [
+                "em",
+                "o"
+            ],
+            [
+                "nam",
+                "hlanje"
+            ],
+            [
+                "ku",
+                "ye"
+            ],
+            [
+                "a",
+                "se"
+            ],
+            [
+                "la",
+                "li"
+            ],
+            [
+                "s",
+                "ana"
+            ],
+            [
+                "u",
+                "zi"
+            ],
+            [
+                "on",
+                "e"
+            ],
+            [
+                "i",
+                "leyo"
+            ],
+            [
+                "zi",
+                "nga"
+            ],
+            [
+                "ka",
+                "m"
+            ],
+            [
+                "and",
+                "and"
+            ],
+            [
+                "ba",
+                "nga"
+            ],
+            [
+                "wo",
+                "wo"
+            ],
+            [
+                "n",
+                "jalo"
+            ],
+            [
+                "u",
+                "li"
+            ],
+            [
+                "ng",
+                "ele"
+            ],
+            [
+                "ind",
+                "lela"
+            ],
+            [
+                "e",
+                "ya"
+            ],
+            [
+                "e",
+                "kha"
+            ],
+            [
+                "si",
+                "le"
+            ],
+            [
+                "sh",
+                "o"
+            ],
+            [
+                "da",
+                "ka"
+            ],
+            [
+                "kum",
+                "bi"
+            ],
+            [
+                "ngng",
+                "ngng"
+            ],
+            [
+                "la",
+                "ma"
+            ],
+            [
+                "b",
+                "iso"
+            ],
+            [
+                "um",
+                "zi"
+            ],
+            [
+                "bo",
+                "m"
+            ],
+            [
+                "n",
+                "j"
+            ],
+            [
+                "lwan",
+                "yana"
+            ],
+            [
+                "kw",
+                "izi"
+            ],
+            [
+                "ng",
+                "ana"
+            ],
+            [
+                "ya",
+                "ngo"
+            ],
+            [
+                "bu",
+                "za"
+            ],
+            [
+                "kh",
+                "we"
+            ],
+            [
+                "uku",
+                "yi"
+            ],
+            [
+                "aku",
+                "kho"
+            ],
+            [
+                "a",
+                "ye"
+            ],
+            [
+                "elel",
+                "wa"
+            ],
+            [
+                "uma",
+                "ma"
+            ],
+            [
+                "kha",
+                "tha"
+            ],
+            [
+                "le",
+                "ko"
+            ],
+            [
+                "wa",
+                "ng"
+            ],
+            [
+                "ii",
+                "ng"
+            ],
+            [
+                "mmmm",
+                "mmmm"
+            ],
+            [
+                "v",
+                "en"
+            ],
+            [
+                "phula",
+                "phu"
+            ],
+            [
+                "n",
+                "andi"
+            ],
+            [
+                "ya",
+                "nga"
+            ],
+            [
+                "tha",
+                "tha"
+            ],
+            [
+                "oku",
+                "ba"
+            ],
+            [
+                "lwa",
+                "zi"
+            ],
+            [
+                "yo",
+                "kuba"
+            ],
+            [
+                "hi",
+                "hi"
+            ],
+            [
+                "na",
+                "nga"
+            ],
+            [
+                "n",
+                "emi"
+            ],
+            [
+                "un",
+                "ya"
+            ],
+            [
+                "kwi",
+                "i"
+            ],
+            [
+                "elelelelelelelel",
+                "elelelelelelelel"
+            ],
+            [
+                "k",
+                "ana"
+            ],
+            [
+                "ka",
+                "lo"
+            ],
+            [
+                "elele",
+                "yo"
+            ],
+            [
+                "a",
+                "f"
+            ],
+            [
+                "ku",
+                "ya"
+            ],
+            [
+                "bha",
+                "li"
+            ],
+            [
+                "u",
+                "r"
+            ],
+            [
+                "li",
+                "lo"
+            ],
+            [
+                "za",
+                "zi"
+            ],
+            [
+                "th",
+                "eni"
+            ],
+            [
+                "ng",
+                "elo"
+            ],
+            [
+                "kwa",
+                "m"
+            ],
+            [
+                "them",
+                "ba"
+            ],
+            [
+                "le",
+                "si"
+            ],
+            [
+                "elin",
+                "ye"
+            ],
+            [
+                "u",
+                "yi"
+            ],
+            [
+                "]",
+                "["
+            ],
+            [
+                "a",
+                "be"
+            ],
+            [
+                "u",
+                "l"
+            ],
+            [
+                "in",
+                "k"
+            ],
+            [
+                "za",
+                "ku"
+            ],
+            [
+                "e",
+                "di"
+            ],
+            [
+                "o",
+                "nga"
+            ],
+            [
+                "u",
+                "g"
+            ],
+            [
+                "n",
+                "k"
+            ],
+            [
+                "ma",
+                "ma"
+            ],
+            [
+                "the",
+                "the"
+            ],
+            [
+                "a",
+                "ki"
+            ],
+            [
+                "i",
+                "gama"
+            ],
+            [
+                "za",
+                "kho"
+            ],
+            [
+                "res",
+                "tu"
+            ],
+            [
+                "l",
+                "oni"
+            ],
+            [
+                "be",
+                "nga"
+            ],
+            [
+                "tsh",
+                "ane"
+            ],
+            [
+                "im",
+                "ini"
+            ],
+            [
+                "en",
+                "za"
+            ],
+            [
+                "s",
+                "an"
+            ],
+            [
+                "li",
+                "nga"
+            ],
+            [
+                "kwa",
+                "ma"
+            ],
+            [
+                "fi",
+                "k"
+            ],
+            [
+                "ku",
+                "la"
+            ],
+            [
+                "nd",
+                "lu"
+            ],
+            [
+                "d",
+                "lo"
+            ],
+            [
+                "sa",
+                "sa"
+            ],
+            [
+                "e",
+                "bo"
+            ],
+            [
+                "h",
+                "ele"
+            ],
+            [
+                "ba",
+                "ba"
+            ],
+            [
+                "ph",
+                "inda"
+            ],
+            [
+                "z",
+                "eni"
+            ],
+            [
+                "ku",
+                "lo"
+            ],
+            [
+                "nje",
+                "nge"
+            ],
+            [
+                "ngesi",
+                "ngesi"
+            ],
+            [
+                "z",
+                "el"
+            ],
+            [
+                "yi",
+                "m"
+            ],
+            [
+                "to",
+                "r"
+            ],
+            [
+                "y",
+                "into"
+            ],
+            [
+                "wa",
+                "bo"
+            ],
+            [
+                "a",
+                "kho"
+            ],
+            [
+                "y",
+                "on"
+            ],
+            [
+                "am",
+                "e"
+            ],
+            [
+                "i",
+                "d"
+            ],
+            [
+                "yi",
+                "le"
+            ],
+            [
+                "ban",
+                "e"
+            ],
+            [
+                "dla",
+                "la"
+            ],
+            [
+                "ene",
+                "yo"
+            ],
+            [
+                "na",
+                "ye"
+            ],
+            [
+                "e",
+                "r"
+            ],
+            [
+                "si",
+                "ka"
+            ],
+            [
+                "um",
+                "bi"
+            ],
+            [
+                "k",
+                "elwa"
+            ],
+            [
+                "we",
+                "thu"
+            ],
+            [
+                "za",
+                "khe"
+            ],
+            [
+                "u",
+                "le"
+            ],
+            [
+                "ku",
+                "se"
+            ],
+            [
+                "th",
+                "ina"
+            ],
+            [
+                "si",
+                "s"
+            ],
+            [
+                "u",
+                "the"
+            ],
+            [
+                "wa",
+                "la"
+            ],
+            [
+                "ya",
+                "yo"
+            ],
+            [
+                "fo",
+                "r"
+            ],
+            [
+                "b",
+                "eli"
+            ],
+            [
+                "y",
+                "elwa"
+            ],
+            [
+                "th",
+                "weni"
+            ],
+            [
+                "ka",
+                "ba"
+            ],
+            [
+                "lo",
+                "bo"
+            ],
+            [
+                "o",
+                "bo"
+            ],
+            [
+                "z",
+                "em"
+            ],
+            [
+                "ise",
+                "benzi"
+            ],
+            [
+                "fi",
+                "ke"
+            ],
+            [
+                "m",
+                "be"
+            ],
+            [
+                "n",
+                "kosi"
+            ],
+            [
+                "un",
+                "e"
+            ],
+            [
+                "ezi",
+                "nye"
+            ],
+            [
+                "ba",
+                "lu"
+            ],
+            [
+                "on",
+                "t"
+            ],
+            [
+                "a",
+                "lisa"
+            ],
+            [
+                "bu",
+                "zo"
+            ],
+            [
+                "om",
+                "nye"
+            ],
+            [
+                "ni",
+                "ke"
+            ],
+            [
+                "l",
+                "l"
+            ],
+            [
+                "ba",
+                "za"
+            ],
+            [
+                "ngen",
+                "e"
+            ],
+            [
+                "k",
+                "elwe"
+            ],
+            [
+                "lw",
+                "ana"
+            ],
+            [
+                "lw",
+                "imi"
+            ],
+            [
+                "ku",
+                "de"
+            ],
+            [
+                "we",
+                "si"
+            ],
+            [
+                "ne",
+                "e"
+            ],
+            [
+                "o",
+                "r"
+            ],
+            [
+                "yen",
+                "za"
+            ],
+            [
+                "n",
+                "an"
+            ],
+            [
+                "tsh",
+                "in"
+            ],
+            [
+                "i",
+                "thi"
+            ],
+            [
+                "za",
+                "nge"
+            ],
+            [
+                "hl",
+                "eli"
+            ],
+            [
+                "ye",
+                "su"
+            ],
+            [
+                "ze",
+                "si"
+            ],
+            [
+                "t",
+                "ra"
+            ],
+            [
+                "uku",
+                "zi"
+            ],
+            [
+                "ta",
+                "ta"
+            ],
+            [
+                "kho",
+                "lwa"
+            ],
+            [
+                "khu",
+                "pha"
+            ],
+            [
+                "ng",
+                "we"
+            ],
+            [
+                "kwa",
+                "khe"
+            ],
+            [
+                "e",
+                "ngen"
+            ],
+            [
+                "zi",
+                "ya"
+            ],
+            [
+                "ph",
+                "end"
+            ],
+            [
+                "is",
+                "ana"
+            ],
+            [
+                "sa",
+                "pho"
+            ],
+            [
+                "om",
+                "e"
+            ],
+            [
+                "ngi",
+                "leyo"
+            ],
+            [
+                "ed",
+                "isa"
+            ],
+            [
+                "zi",
+                "nto"
+            ],
+            [
+                "l",
+                "ind"
+            ],
+            [
+                "tya",
+                "la"
+            ],
+            [
+                "jo",
+                "nge"
+            ],
+            [
+                "m",
+                "fo"
+            ],
+            [
+                "ku",
+                "zo"
+            ],
+            [
+                "vu",
+                "ma"
+            ],
+            [
+                "za",
+                "thu"
+            ],
+            [
+                "ki",
+                "si"
+            ],
+            [
+                "lu",
+                "m"
+            ],
+            [
+                "the",
+                "thi"
+            ],
+            [
+                "ent",
+                "si"
+            ],
+            [
+                "setyenzi",
+                "swa"
+            ],
+            [
+                "z",
+                "ona"
+            ],
+            [
+                "in",
+                "o"
+            ],
+            [
+                "wa",
+                "ma"
+            ],
+            [
+                "wa",
+                "yo"
+            ],
+            [
+                "k",
+                "ona"
+            ],
+            [
+                "kwa",
+                "ba"
+            ],
+            [
+                "bona",
+                "kala"
+            ],
+            [
+                "pa",
+                "li"
+            ],
+            [
+                "e",
+                "bi"
+            ],
+            [
+                "m",
+                "ela"
+            ],
+            [
+                "u",
+                "tsh"
+            ],
+            [
+                "in",
+                "de"
+            ],
+            [
+                "ph",
+                "ondo"
+            ],
+            [
+                "i",
+                "ngo"
+            ],
+            [
+                "t",
+                "r"
+            ],
+            [
+                "a",
+                "thi"
+            ],
+            [
+                "ba",
+                "ya"
+            ],
+            [
+                "g",
+                "we"
+            ]
+        ],
+        "language": "xh"
+    }
+}
